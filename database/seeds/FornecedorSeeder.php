@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\fornecedor;
+use App\Fornecedor;
 
-class fornecedorSeeder extends Seeder
+class FornecedorSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,14 +15,15 @@ class fornecedorSeeder extends Seeder
         //
         $fornecedor = new fornecedor();
         $fornecedor->nome = 'Elisa Sanches';
-        $fornecedor->uf = 'RJ';
-        $fornecedor->email = 'borboleta@sh.com.br';
+        $fornecedor->uf = 'SP';
+        $fornecedor->email = 'borboleta@gmail.com';
         $fornecedor->save();
 
         fornecedor::create([
-            'nome'=> 'Piper Perri',
-            'uf'=>'USA',
-            'email'=>'smallblonde@rking.com'
+            'nome' => 'Piper Perri',
+            'email' => 'loirinhaPequena@gmail.com',
+            'uf' => 'RJ'
         ]);
+
     }
 }
