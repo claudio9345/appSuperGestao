@@ -12,7 +12,7 @@ class SiteContatoSeeder extends Seeder
      */
     public function run()
     {
-        //
+        /*
         $contato = new SiteContato();
         $contato->nome = 'Dillion Harper';
         $contato->email = 'oculos@sh.com';
@@ -20,5 +20,8 @@ class SiteContatoSeeder extends Seeder
         $contato->motivo_contato = 1;
         $contato->mensagem = 'Goza no meu oculos';
         $contato->save();
+        */
+
+        factory(SiteContato::class,100)->create();
     }
 }
