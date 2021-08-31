@@ -31,7 +31,7 @@ Route::get('/', 'principalController@principal')->name('site.index');
 Route::get('/sobreNos', 'sobreNosController@sobreNos')->name('site.sobreNos');
 
 Route::get('/contato', 'contatoController@contato')->name('site.contato');
-Route::post('/contato', 'contatoController@contato')->name('site.contato');
+Route::post('/contato', 'contatoController@salvar')->name('site.contato');
 
 Route::get('/login', function(){return 'login';})->name('site.login');
 
