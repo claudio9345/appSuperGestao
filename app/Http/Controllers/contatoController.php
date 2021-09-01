@@ -14,11 +14,11 @@ class contatoController extends Controller
     public function salvar(Request $request){
 
         $request->validate([
-            'nome' => 'required',
-            'telefone' => 'required',
+            'nome' => 'required|min:2|max:50',
+           /* 'telefone' => 'required',
             'email' => 'required',
             'motivo_contato' => 'required',
-            'mensagem' => 'required'
+            'mensagem' => 'required'*/
         ]);
         $contato = new SiteContato();
         $contato->nome = $request->input('nome');
