@@ -9,12 +9,13 @@
 
             <div class="informacao-pagina">
                 <div class="contato-principal">
-                    @component('site.layouts._components.formContato', ['classe'=>'borda-preta'])
+                    @component('site.layouts._components.formContato', ['classe'=>'borda-preta', 'motivo_contato'=>$motivo_contato])
                         <p>A nossa equipe vai retornar seu arrombado</p>
                     @endcomponent
                 </div>
             </div>  
         </div>
+
 
        <div class="rodape">
             <div class="redes-sociais">
