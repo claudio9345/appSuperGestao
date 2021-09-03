@@ -13,7 +13,7 @@ class contatoController extends Controller
             '2' => 'Elogio',
             '3' => 'Reclamação',
         ];
-        return view('site.contato', ['titulo' => 'Contato (teste)', 'motivo_contato' => $motivo_contatos]);
+        return view('site.contato', ['titulo' => 'Contato (teste)', 'motivo_contatos' => $motivo_contatos]);
     }
 
     public function salvar(Request $request){
